@@ -54,10 +54,9 @@ This repository contains the source code for my portfolio website.
 
 The portfolio is still being improved gradually, including content refinement, polish, and domain setup.
 
-This project is a result of vibe coding with ChatGPT 5.4 as an personal learning attempt building website as I have zero background in this field.
-Please do give constructive suggestion if you find anything to improve as if you explain to 5 years old.
+This project is also part of my personal learning journey in web development. I come from a non-web background, so I am building and improving this portfolio step by step while learning along the way. Constructive suggestions are always welcome.
 
-## Contacs
+## Contacts
 email : rifqijalu@gmail.com
 
 LinkedIn : https://linkedin.com/in/rifqijalu
