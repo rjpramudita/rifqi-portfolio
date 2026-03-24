@@ -5,6 +5,9 @@ Personal portfolio website built to present my work across operations, analytics
 Live site:
 https://rifqi-portfolio-pi.vercel.app/
 
+##Preview
+![Portfolio Preview](./public/og-preview.png)
+
 ## About This Project
 
 This portfolio highlights the kind of work I do at the intersection of:
