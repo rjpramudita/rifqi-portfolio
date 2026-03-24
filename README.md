@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Rifqi Jalu Pramudita Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built to present my work across operations, analytics, dashboards, workflow design, and internal systems.
 
-Currently, two official plugins are available:
+Live site:
+https://rifqi-portfolio-pi.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About This Project
 
-## React Compiler
+This portfolio highlights the kind of work I do at the intersection of:
+- operations
+- analytics
+- dashboarding
+- workflow / internal system design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The site is designed as a single-page portfolio with bilingual content, project screenshots, responsive layout, and a cleaner presentation of selected work.
 
-## Expanding the ESLint configuration
+## Featured Work
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Structured Field Operations Control System
+An internal AppSheet-based field operations system used to improve visibility, standardize technician activity tracking, and reduce dependency on WhatsApp-based updates.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Standardized Reporting and Dashboarding
+Operational reporting and dashboard structures built to make field conditions easier to understand across teams and management through more structured visibility.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Vercel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Local Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run this project locally:
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run dev
+
+## Production Build
+npm run build
+
+npm run preview
+
+## Project Structure
+src/        main React application files
+
+public/     static assets such as images, PDF, favicon, and preview image
+
+## Notes
+This repository contains the source code for my portfolio website.
+
+The portfolio is still being improved gradually, including content refinement, polish, and domain setup.
+
+This project is a result of vibe coding with ChatGPT 5.4 as an personal learning attempt building website as I have zero background in this field.
+Please do give constructive suggestion if you find anything to improve as if you explain to 5 years old.
+
+## Contacs
+email : rifqijalu@gmail.com
+
+LinkedIn : https://linkedin.com/in/rifqijalu
