@@ -117,6 +117,9 @@ const images = {
   dashboardMain: "/images/projects/dashboard-main.png",
   dashboardConversion: "/images/projects/dashboard-conversion.png",
   dashboardDailyOps: "/images/projects/dashboard-daily-ops.png",
+  project3Output1: "/images/projects/project3-output-1.png",
+  project3Output2: "/images/projects/project3-output-2.png",
+  project3FlowDetail: "/images/projects/project3-flow-detail.jpeg"
 };
 
 const copy: Record<Lang, CopyShape> = {
@@ -215,6 +218,33 @@ const copy: Record<Lang, CopyShape> = {
           mainImage: images.dashboardMain,
           sideImages: [images.dashboardConversion, images.dashboardDailyOps],
         },
+        {
+          title: "Structuring Unclear Request Notes for Better Scheduling Control",
+          summary:
+            "Built an AI-assisted internal workflow in Google Sheets using Google Apps Script and Gemini API to turn inconsistent free-text request notes into clearer scheduling signals that admins could monitor and act on more easily.",
+          problem:
+            "Sales entered request notes in inconsistent free-text formats, making it difficult to detect urgency, identify date-specific requests, and maintain scheduling control. Admins had to manually review messy spreadsheet inputs one by one, which made the process slow and increased the risk of urgent or date-bound requests being missed.",
+          did: [
+            "Designed the workflow logic for reading request notes from Google Sheets and using a reference date as context for extraction",
+            "Built the Apps Script bridge between Google Sheets and Gemini API to process free-text request notes automatically",
+            "Configured the logic to extract specific request dates into the FULL DATE REQ column when date signals were detected",
+            "Defined operational status categories for requests without clear dates: ASAP, KOSONG, TBA, and REVIEW",
+            "Mapped structured outputs back into the sheet so AppSheet could surface clearer alerts and scheduling signals for admins",
+            "Tested, refined, and updated the workflow over time based on real operational usage"
+          ],
+          outcome:
+            "Request notes that were previously difficult to interpret became easier to categorize, track, and prioritize. Admins gained clearer visibility into urgent requests, date-specific requests, hold cases, and items requiring manual review, reducing the chance of overlooked scheduling requests.",
+          tags: [
+            "Google Sheets",
+            "Apps Script",
+            "Gemini API",
+            "Workflow Automation",
+            "Request Classification",
+            "Scheduling Control"
+          ],
+          mainImage: images.project3FlowDetail,
+          sideImages: [images.project3Output1, images.project3Output2],
+        }, 
       ],
     },
     how: {
@@ -370,6 +400,33 @@ const copy: Record<Lang, CopyShape> = {
           tags: ["Dashboard", "Pelaporan", "KPI Tracking", "Visibilitas Operasional", "Pelaporan Manajerial"],
           mainImage: images.dashboardMain,
           sideImages: [images.dashboardConversion, images.dashboardDailyOps],
+        },
+        {
+          title: "Menstrukturkan Catatan Request yang Tidak Jelas agar Kontrol Penjadwalan Lebih Baik",
+          summary:
+            "Membangun workflow internal berbantuan AI di Google Sheets menggunakan Google Apps Script dan Gemini API untuk mengubah catatan request free-text yang tidak konsisten menjadi sinyal penjadwalan yang lebih jelas dan lebih mudah dipantau admin.",
+          problem:
+            "Sales mengisi catatan request dalam format free-text yang tidak konsisten, sehingga sulit mendeteksi mana yang urgent, mana yang punya tanggal spesifik, dan bagaimana menjaga kontrol penjadwalan tetap rapi. Admin harus meninjau input spreadsheet yang berantakan satu per satu, yang membuat proses lambat dan meningkatkan risiko request urgent atau request bertanggal khusus terlewat.",
+          did: [
+            "Merancang logika workflow untuk membaca catatan request dari Google Sheets dan menggunakan tanggal referensi sebagai konteks ekstraksi",
+            "Membangun Apps Script sebagai jembatan antara Google Sheets dan Gemini API untuk memproses catatan request free-text secara otomatis",
+            "Mengatur logika agar tanggal request spesifik dapat diekstrak ke kolom FULL DATE REQ ketika ada indikasi tanggal",
+            "Menentukan kategori status operasional untuk request tanpa tanggal yang jelas: ASAP, KOSONG, TBA, dan REVIEW",
+            "Menulis hasil yang sudah terstruktur kembali ke sheet agar AppSheet bisa menampilkan alert dan sinyal penjadwalan yang lebih jelas untuk admin",
+            "Melakukan testing, penyempurnaan, dan update berkala berdasarkan penggunaan nyata di operasional"
+          ],
+          outcome:
+            "Catatan request yang sebelumnya sulit dibaca menjadi lebih mudah dikategorikan, dipantau, dan diprioritaskan. Admin mendapat visibilitas yang lebih jelas terhadap request urgent, request bertanggal spesifik, request hold, dan item yang perlu review manual, sehingga risiko request penjadwalan terlewat bisa ditekan.",
+          tags: [
+            "Google Sheets",
+            "Apps Script",
+            "Gemini API",
+            "Workflow Automation",
+            "Request Classification",
+            "Scheduling Control"
+          ],
+          mainImage: images.project3FlowDetail,
+          sideImages: [images.project3Output1, images.project3Output2],
         },
       ],
     },
