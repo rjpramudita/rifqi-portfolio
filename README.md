@@ -26,6 +26,9 @@ An internal AppSheet-based field operations system used to improve visibility, s
 ### 2. Standardized Reporting and Dashboarding
 Operational reporting and dashboard structures built to make field conditions easier to understand across teams and management through more structured visibility.
 
+### 3. Structuring Unclear Request Notes for Better Scheduling Control
+Built an AI-assisted internal workflow in Google Sheet using Google AppScript and Gemini API to turn inconsistent free-text request notes into clearer scheduling signals that admins could monitor and act on easly.
+
 ## Tech Stack
 
 - React
@@ -38,6 +41,7 @@ Operational reporting and dashboard structures built to make field conditions ea
 ## Local Development
 
 To run this project locally:
+
 npm install
 
 npm run dev
